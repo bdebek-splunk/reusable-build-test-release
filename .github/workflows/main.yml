@@ -1,6 +1,9 @@
 name: reusable-test-build-release
 on:
-  workflow_call
+  workflow_call:
+    secrets:
+      GH_TOKEN:
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
