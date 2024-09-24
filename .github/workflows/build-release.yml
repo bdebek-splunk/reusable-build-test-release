@@ -3,7 +3,8 @@ name: release
 on:
   workflow_call:
     secrets:
-      AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
+      AUTOMATION_TOKEN:
+        required: true
 
 jobs:
   build:
