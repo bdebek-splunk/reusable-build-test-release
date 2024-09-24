@@ -2,6 +2,9 @@ name: release
 
 on:
   workflow_call:
+    secrets:
+      AUTOMATION_TOKEN: # Define the secret that will be passed
+        required: true
 
 jobs:
   build:
